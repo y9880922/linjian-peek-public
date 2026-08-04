@@ -32,6 +32,12 @@ https://你的-mcp-服务.onrender.com/mcp/你的MCP_ACCESS_KEY
 
 这个完整地址等同于一把私密钥匙，不要截图、转发或公开。
 
+## 无需银行卡的 Cloudflare 方案
+
+若 Render 要求添加付款资料，请不要填写或伪造信息。改用仓库中的
+`CLOUDFLARE_PHONE_SETUP.md`，它把手机后端与 MCP 合并为一个 Workers Free 服务，
+仍然保持相同的六工具安全范围。
+
 ## Android 设置
 
 手机端后端地址必须使用 Render 提供的 `https://...onrender.com` 地址。安全版关闭明文 HTTP，不接受局域网 `http://` 服务。

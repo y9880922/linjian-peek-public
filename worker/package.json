@@ -1,0 +1,19 @@
+{
+  "name": "zhangxinchuang-safe-worker",
+  "version": "0.3.5.1-safe.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run --outdir dist",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "wrangler": "^4.27.0"
+  }
+}
