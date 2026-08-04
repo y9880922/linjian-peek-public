@@ -131,7 +131,7 @@ public class AppPrefs {
         return v;
     }
 
-    public static int interval(Context ctx) { return Math.max(700, get(ctx).getInt(KEY_INTERVAL, 1500)); }
+    public static int interval(Context ctx) { return Math.max(5000, get(ctx).getInt(KEY_INTERVAL, 15000)); }
 
     public static Map<String, String> defaultApps() {
         LinkedHashMap<String, String> apps = new LinkedHashMap<>();

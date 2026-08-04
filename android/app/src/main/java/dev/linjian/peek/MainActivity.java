@@ -180,7 +180,7 @@ public class MainActivity extends Activity {
         if (deviceInput != null) deviceInput.setText(prefs.getString(AppPrefs.KEY_DEVICE, "android-phone"));
         if (userNameInput != null) userNameInput.setText(prefs.getString(AppPrefs.KEY_USER_NICKNAME, "宝宝"));
         if (partnerNameInput != null) partnerNameInput.setText(prefs.getString(AppPrefs.KEY_PARTNER_NICKNAME, "老公"));
-        if (intervalInput != null) intervalInput.setText(String.valueOf(prefs.getInt(AppPrefs.KEY_INTERVAL, 1500)));
+        if (intervalInput != null) intervalInput.setText(String.valueOf(prefs.getInt(AppPrefs.KEY_INTERVAL, 15000)));
         if (cityInput != null) cityInput.setText(prefs.getString(AppPrefs.KEY_CITY, ""));
         if (weatherInput != null) weatherInput.setText(prefs.getString(AppPrefs.KEY_WEATHER_NOTE, ""));
         if (weatherAliasInput != null) weatherAliasInput.setText(WeatherState.currentLocation(this).optString("name", "家"));

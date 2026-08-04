@@ -11,6 +11,8 @@ envVarGroups:
         generateValue: true
       - key: LINJIAN_DEFAULT_DEVICE
         value: android-phone
+      - key: MCP_ACCESS_KEY
+        generateValue: true
 
 services:
   - type: web

@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Unified MCP server for 掌心窗: screenshot, phone control, alarm, notification.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.safe.js",
+    "start:full": "node server.js"
   },
   "engines": {
     "node": ">=20"

@@ -78,20 +78,6 @@ public class LifeState {
             state.put("usage_permission_ready", usageReady);
             state.put("screen_time_today_minutes", usage.screenTimeMinutes);
             state.put("unlock_count_today", usage.unlockCount);
-            state.put("last_unlock_at", usage.lastUnlockAt <= 0 ? "" : formatIsoLocal(usage.lastUnlockAt));
-            state.put("top_apps_today", usage.topApps);
-            state.put("city", prefs.city());
-            state.put("weather_note", prefs.weatherNote());
-            JSONObject weatherState = WeatherState.collect(ctx);
-            state.put("weather_state", weatherState);
-            state.put("weather_locations", weatherState.optJSONArray("locations"));
-            state.put("current_weather_location", weatherState.optJSONObject("current"));
-            state.put("screen_text", ScreenshotService.screenText());
-            state.put("active_reminders", ActiveReminder.config(ctx));
-            state.put("home_mode", HomeMode.config(ctx));
-            state.put("known_apps", AppPrefs.knownAppsJson(ctx));
-            state.put("app_gate", AppGate.config(ctx));
-            state.put("cycle_state", CycleState.collect(ctx));
             state.put("guidian_state", GuidianState.config(ctx));
             state.put("summary", makeSummary(batteryPercent, charging, currentApp, usage.screenTimeMinutes, usage.unlockCount, usageReady));
         } catch (Exception e) {
